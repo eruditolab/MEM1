@@ -329,7 +329,9 @@
         correcta: 3
     },
     {
-        pregunta: `Al lanzar una pelota en un juego de golf, su altura en metros, desde que se lanza hasta que cae al suelo, se modela a través de la función H(t) = -0,86t(t – 6), donde t es la cantidad de segundos transcurridos desde que ésta fue lanzada. ¿Cuál de las siguientes afirmaciones es FALSA?`,
+        pregunta: `Al lanzar una pelota en un juego de golf, su altura en metros, desde que se lanza hasta que cae al suelo, se modela a través de la función 
+        <p style="text-align: center;">H(t) = -0,86t(t – 6)</p>
+        <p>Donde t es la cantidad de segundos transcurridos desde que ésta fue lanzada. ¿Cuál de las siguientes afirmaciones es FALSA?</p>`,
         opciones: [
             `La pelota cae al suelo a los 6 segundos de haber sido lanzada.`,
             `La máxima altura que alcanza la pelota es 3 metros.`,
@@ -543,4 +545,5 @@
 
 
         initQuiz();
+
         setTimeout(renderMath, 100);
