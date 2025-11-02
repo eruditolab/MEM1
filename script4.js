@@ -132,7 +132,7 @@
         correcta: 1
     },
     {
-        pregunta: `Max gana mensualmente $x y cada dos meses gasta $y. ¿En cuántos meses Max ahorrará $xy?`,
+        pregunta: `Max gana mensualmente x pesos y cada dos meses gasta y pesos. ¿En cuántos meses Max ahorrará xy pesos?`,
         opciones: [
             `<span class="math-expr"><span class="fraction"><span class="num">2xy</span><span class="den">2x - y</span></span></span>`,
             `<span class="math-expr"><span class="fraction"><span class="num">xy</span><span class="den">x - y</span></span></span>`,
@@ -476,4 +476,5 @@
 
 
         initQuiz();
+
         setTimeout(renderMath, 100);
