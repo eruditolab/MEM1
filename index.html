@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniensayos de Matemáticas M1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #1a73e8;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .quiz-card {
+            background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: block;
+        }
+
+        .quiz-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+        }
+
+        .quiz-card:hover::before {
+            top: -60%;
+            left: -60%;
+        }
+
+        .quiz-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(26, 115, 232, 0.4);
+        }
+
+        .quiz-card:active {
+            transform: translateY(-5px);
+        }
+
+        .quiz-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .quiz-title {
+            font-size: 1.2em;
+            color: white;
+            font-weight: 500;
+            position: relative;
+            z-index: 1;
+        }
+
+        .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .info-box {
+            background: #e8f0fe;
+            border-left: 4px solid #1a73e8;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        .info-box h3 {
+            color: #1a73e8;
+            margin-bottom: 10px;
+        }
+
+        .info-box ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .header p {
+                font-size: 1em;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .subtitle {
+                font-size: 1.4em;
+            }
+
+            .grid-container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 15px;
+            }
+
+            .quiz-card {
+                padding: 20px;
+            }
+
+            .quiz-number {
+                font-size: 2.5em;
+            }
+
+            .quiz-title {
+                font-size: 1em;
+            }
+
+            .logo {
+                max-width: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            .quiz-card {
+                padding: 15px;
+            }
+
+            .quiz-number {
+                font-size: 2em;
+            }
+
+            .info-box {
+                padding: 15px;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            padding: 20px;
+            font-size: 0.9em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.postimg.cc/q7pdCfFy/Logo-300-x-300-sin-fondo.png" alt="Logo" class="logo">
+        <h1>Miniensayos de Matemáticas M1</h1>
+        <p>Practica y mejora tus habilidades para la PAES</p>
+    </div>
+
+    <div class="container">
+        <h2 class="subtitle">Selecciona un Miniensayo</h2>
+        
+        <div class="grid-container">
+            <a href="ME1M1.html" class="quiz-card">
+                <div class="icon">📝</div>
+                <div class="quiz-number">01</div>
+                <div class="quiz-title">Miniensayo 1</div>
+            </a>
+
+            <a href="ME2M1.html" class="quiz-card">
+                <div class="icon">📊</div>
+                <div class="quiz-number">02</div>
+                <div class="quiz-title">Miniensayo 2</div>
+            </a>
+
+            <a href="ME3M1.html" class="quiz-card">
+                <div class="icon">📐</div>
+                <div class="quiz-number">03</div>
+                <div class="quiz-title">Miniensayo 3</div>
+            </a>
+
+            <a href="ME4M1.html" class="quiz-card">
+                <div class="icon">🔢</div>
+                <div class="quiz-number">04</div>
+                <div class="quiz-title">Miniensayo 4</div>
+            </a>
+
+            <a href="ME5M1.html" class="quiz-card">
+                <div class="icon">📈</div>
+                <div class="quiz-number">05</div>
+                <div class="quiz-title">Miniensayo 5</div>
+            </a>
+
+            <a href="ME6M1.html" class="quiz-card">
+                <div class="icon">🎯</div>
+                <div class="quiz-number">06</div>
+                <div class="quiz-title">Miniensayo 6</div>
+            </a>
+
+            <a href="ME7M1.html" class="quiz-card">
+                <div class="icon">📉</div>
+                <div class="quiz-number">07</div>
+                <div class="quiz-title">Miniensayo 7</div>
+            </a>
+
+            <a href="ME8M1.html" class="quiz-card">
+                <div class="icon">🧮</div>
+                <div class="quiz-number">08</div>
+                <div class="quiz-title">Miniensayo 8</div>
+            </a>
+
+            <a href="ME9M1.html" class="quiz-card">
+                <div class="icon">📏</div>
+                <div class="quiz-number">09</div>
+                <div class="quiz-title">Miniensayo 9</div>
+            </a>
+
+            <a href="ME10M1.html" class="quiz-card">
+                <div class="icon">🔺</div>
+                <div class="quiz-number">10</div>
+                <div class="quiz-title">Miniensayo 10</div>
+            </a>
+
+            <a href="ME11M1.html" class="quiz-card">
+                <div class="icon">➗</div>
+                <div class="quiz-number">11</div>
+                <div class="quiz-title">Miniensayo 11</div>
+            </a>
+
+            <a href="ME12M1.html" class="quiz-card">
+                <div class="icon">🎓</div>
+                <div class="quiz-number">12</div>
+                <div class="quiz-title">Miniensayo 12</div>
+            </a>
+        </div>
+
+        <div class="info-box">
+            <h3>📚 Instrucciones</h3>
+            <ul>
+                <li>Cada miniensayo contiene 27 preguntas seleccionadas aleatoriamente</li>
+                <li>El tiempo recomendado es de 45-60 minutos por miniensayo</li>
+                <li>Al finalizar, recibirás tu puntaje PAES equivalente</li>
+                <li>Puedes realizar cada miniensayo las veces que desees</li>
+                <li>Selecciona un miniensayo para comenzar</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Miniensayos de Matemáticas M1 | Preparación PAES</p>
+    </div>
+</body>
+</html>
