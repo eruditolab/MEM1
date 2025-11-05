@@ -66,7 +66,7 @@
         correcta: 2
     },
     {
-        pregunta: `Una herencia de $ 7.200.000 será repartida entre los 6 hijos de un matrimonio en partes iguales. Si uno de estos hijos a su vez repartirá su parte entre sus 5 hijos de manera equitativa, ¿cuánto recibirán 3 de estos nietos del matrimonio?`,
+        pregunta: `Una herencia de 7.200.000 pesos será repartida entre los 6 hijos de un matrimonio en partes iguales. Si uno de estos hijos a su vez repartirá su parte entre sus 5 hijos de manera equitativa, ¿cuánto recibirán 3 de estos nietos del matrimonio?`,
         opciones: [
             "$ 720.000",
             "$ 240.000",
@@ -76,7 +76,7 @@
         correcta: 0
     },
     {
-        pregunta: `Si el precio de un artículo que es $ 300.000 se aumenta en sus dos tercios y el nuevo precio se disminuye en su quinta parte, entonces el precio final es`,
+        pregunta: `Si el precio de un artículo que es 300.000 pesos se aumenta en sus dos tercios y el nuevo precio se disminuye en su quinta parte, entonces el precio final es`,
         opciones: [
             "$ 20.000",
             "$ 40.000",
@@ -126,7 +126,7 @@
         correcta: 2
     },
     {
-        pregunta: `Tres amigos, Alberto, Bernardo y Carlos, tienen $ 80, $ 100 y $ 120 respectivamente. Al comparar entre ellos estas cantidades, afirman:<br><br>
+        pregunta: `Tres amigos, Alberto, Bernardo y Carlos, tienen 80, 100 y 120 dólares respectivamente. Al comparar entre ellos estas cantidades, afirman:<br><br>
         Alberto: "Bernardo tiene 20% más de lo que yo tengo"<br>
         Bernardo: "Carlos tiene 20% más de lo que yo tengo"<br>
         Carlos: "Yo tengo 50% más de lo que tiene Alberto"<br><br>
@@ -150,7 +150,7 @@
         correcta: 1
     },
     {
-        pregunta: `El precio de un artículo es $ C. Si este se aumenta en un 15% y luego se rebaja en un 10%, ¿por qué número se debe multiplicar C para obtener el nuevo precio?`,
+        pregunta: `El precio de un artículo es C dólares. Si este se aumenta en un 15% y luego se rebaja en un 10%, ¿por qué número se debe multiplicar C para obtener el nuevo precio?`,
         opciones: [
             "1,005",
             "1,035",
@@ -170,7 +170,7 @@
         correcta: 3
     },
     {
-        pregunta: `El abuelo Jorge prestó a su nieto Patricio $ 30.000, quedándose con $ 90.000. ¿Con qué porcentaje del dinero se quedó el abuelo?`,
+        pregunta: `El abuelo Jorge prestó a su nieto Patricio 30.000 dólares, quedándose con 90.000 dólares. ¿Con qué porcentaje del dinero se quedó el abuelo?`,
         opciones: [
             "80%",
             "75%",
@@ -200,7 +200,7 @@
         correcta: 3
     },
     {
-        pregunta: `Un comerciante compra una cantidad de naranjas a razón de 3 kilogramos por $ 600 y las vende todas a razón de 4 kilogramos por $ 1.000. Si obtuvo una ganancia de $ 3.000, ¿cuántos kilogramos de naranjas compró?`,
+        pregunta: `Un comerciante compra una cantidad de naranjas a razón de 3 kilogramos por 600 pesos y las vende todas a razón de 4 kilogramos por 1.000 pesos. Si obtuvo una ganancia de 3.000 pesos, ¿cuántos kilogramos de naranjas compró?`,
         opciones: [
             "8",
             "12",
@@ -476,4 +476,5 @@
 
 
         initQuiz();
+
         setTimeout(renderMath, 100);
