@@ -47,7 +47,7 @@
     correcta: 2
 },
 {
-    pregunta: `¿A lo más, cuántos duraznos a $400 cada uno, más dos sandías de $4.400 cada una, se pueden comprar con un billete de $20.000?`,
+    pregunta: `¿A lo más, cuántos duraznos a 400 pesos cada uno, más dos sandías de 4.400 pesos cada una, se pueden comprar con un billete de 20.000 pesos?`,
     opciones: [
         `26`,
         `27`,
@@ -108,7 +108,7 @@
     correcta: 1
 },
 {
-    pregunta: `Don Carlos tiene un carrito donde vende sopaipillas. Las compra en $110 cada una y las vende en $400 cada una. Si en aceite gasta diariamente 2 botellas, cuyo precio es $1.800 cada una, ¿cuántas sopaipillas como mínimo debería vender, si quiere que en una jornada sus ganancias sean mayores a $30.000?`,
+    pregunta: `Don Carlos tiene un carrito donde vende sopaipillas. Las compra en 110 pesos cada una y las vende en 400 pesos cada una. Si en aceite gasta diariamente 2 botellas, cuyo precio es 1.800 pesos cada una, ¿cuántas sopaipillas como mínimo debería vender, si quiere que en una jornada sus ganancias sean mayores a 30.000 pesos?`,
     opciones: [
         `89`,
         `90`,
@@ -209,7 +209,7 @@
     correcta: 0
 },
 {
-    pregunta: `Pedro ahorró dinero juntando en total 82 monedas entre monedas de $100 y de $500. Si en total ahorró $18.600, ¿cuál de los siguientes sistemas permite encontrar la cantidad (y) de monedas de $500 que ahorró, sabiendo que x es la cantidad de monedas de $100?`,
+    pregunta: `Pedro ahorró dinero juntando en total 82 monedas entre monedas de 100 pesos y de 500 pesos. Si en total ahorró 18.600 pesos, ¿cuál de los siguientes sistemas permite encontrar la cantidad (y) de monedas de 500 pesos que ahorró, sabiendo que x es la cantidad de monedas de 100 pesos?`,
     opciones: [
         `<img src="https://i.ibb.co/kVbxyNff/ME6-M1-P21-1.jpg" alt="Pregunta 21 ME6 R1" style="max-width: 100px; height: auto;">`,
         `<img src="https://i.ibb.co/YBQfZ9p8/ME6-M1-P21-2.jpg" alt="Pregunta 21 ME6 R2" style="max-width: 100px; height: auto;">`,
@@ -219,7 +219,7 @@
     correcta: 1
 },
 {
-    pregunta: `Tres pasteles y un chocolate cuestan $6.810. Un pastel y dos chocolates cuestan $3.670. ¿Cuánto cuesta un pastel?`,
+    pregunta: `Tres pasteles y un chocolate cuestan 6.810 pesos. Un pastel y dos chocolates cuestan 3.670 pesos. ¿Cuánto cuesta un pastel?`,
     opciones: [
         `$1.620`,
         `$840`,
@@ -239,7 +239,7 @@
     correcta: 2
 },
 {
-    pregunta: `Si un apoderado tuvo que comprar 2 libros para su hija y gastó $50.230. ¿Cuánto le costó el más barato, si se sabe que costó $14.910 menos que el más caro?`,
+    pregunta: `Si un apoderado tuvo que comprar 2 libros para su hija y gastó 50.230 pesos. ¿Cuánto le costó el más barato, si se sabe que costó 14.910 pesos menos que el más caro?`,
     opciones: [
         `$32.510`,
         `$32.570`,
@@ -497,4 +497,5 @@
 
 
         initQuiz();
+
         setTimeout(renderMath, 100);
