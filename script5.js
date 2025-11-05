@@ -45,7 +45,7 @@
         correcta: 3
     },
     {
-        pregunta: `A una persona le aumentan el sueldo en <span class="math-expr"><span class="fraction"><span class="num">7</span><span class="den">20</span></span></span> de lo que ganaba. Si su nuevo sueldo es $216.000, ¿en cuánto fue aumentado?`,
+        pregunta: `A una persona le aumentan el sueldo en <span class="math-expr"><span class="fraction"><span class="num">7</span><span class="den">20</span></span></span> de lo que ganaba. Si su nuevo sueldo es 216.000 pesos, ¿en cuánto fue aumentado?`,
         opciones: [
             `$160.000`,
             `$140.000`,
@@ -205,7 +205,7 @@
         correcta: 3
     },
     {
-        pregunta: `El costo de arrendar una casa de veraneo es $15.000 fijo, más $22.500 por semana. Una función que permite calcular el costo de arrendar la casa durante n semanas es:`,
+        pregunta: `El costo de arrendar una casa de veraneo es 15.000 pesos fijo, más 22.500 pesos por semana. Una función que permite calcular el costo de arrendar la casa durante n semanas es:`,
         opciones: [
             `C(n) = (15.000 + 22.500) · n`,
             `C(n) = 2n · (15.000 + 22.500)`,
@@ -227,7 +227,7 @@
         correcta: 1
     },
     {
-        pregunta: `Una persona, el mes pasado, pagó por su plan de telefonía móvil para llamadas internacionales $24.600. Si el cargo fijo es $12.000 y el cobro por minuto o fracción de él es $150, entonces ¿cuánto tiempo utilizó dicho mes?`,
+        pregunta: `Una persona, el mes pasado, pagó por su plan de telefonía móvil para llamadas internacionales 24.600 pesos. Si el cargo fijo es 12.000 pesos y el cobro por minuto o fracción de él es 150 pesos, entonces ¿cuánto tiempo utilizó dicho mes?`,
         opciones: [
             `1 hora y 45 minutos`,
             `1 hora y 40 minutos`,
@@ -237,7 +237,7 @@
         correcta: 3
     },
     {
-        pregunta: `Un taxista gasta mensualmente $80.000 en la mantención de su auto. Él sabe que el rendimiento de su auto es de 10 litros de bencina por cada 100 km recorridos y que el litro cuesta $540. Una expresión que nos permite calcular el gasto total (G) mensual, en pesos, en función de un número x de kilómetros recorridos en el mes es:`,
+        pregunta: `Un taxista gasta mensualmente 80.000 pesos en la mantención de su auto. Él sabe que el rendimiento de su auto es de 10 litros de bencina por cada 100 km recorridos y que el litro cuesta 540 pesos. Una expresión que nos permite calcular el gasto total (G) mensual, en pesos, en función de un número x de kilómetros recorridos en el mes es:`,
         opciones: [
             `G = 540·10x + 80.000`,
             `G = 540(x - 10) + 80.000`,
@@ -473,4 +473,5 @@
 
 
         initQuiz();
+
         setTimeout(renderMath, 100);
