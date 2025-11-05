@@ -139,7 +139,7 @@
         correcta: 0
     },
     {
-        pregunta: `En una frutería, se venden 2 kilogramos de manzanas por $2.100, 3 kilogramos de naranjas por $1.200 y 5 kilogramos de peras por $2.600. Si Sebastián compró 10 kilogramos de peras, 8 kilogramos de manzanas y 15 kilogramos de naranjas, el total que pagó Sebastián fue:`,
+        pregunta: `En una frutería, se venden 2 kilogramos de manzanas por 2.100 pesos, 3 kilogramos de naranjas por 1.200 pesos y 5 kilogramos de peras por 2.600 pesos. Si Sebastián compró 10 kilogramos de peras, 8 kilogramos de manzanas y 15 kilogramos de naranjas, el total que pagó Sebastián fue:`,
         opciones: [
             "$19.400",
             "$18.800",
@@ -492,4 +492,5 @@
 
 
         initQuiz();
+
         setTimeout(renderMath, 100);
